@@ -106,11 +106,12 @@ onnx_graph = erase(
 ```
 
 ## 6. Sample
+https://huggingface.co/bes-dev/stable-diffusion-v1-4-onnx/resolve/main/vae_encoder.onnx
 ### Before
-
+![image](https://user-images.githubusercontent.com/33194443/195969983-904da5ec-7fbb-48dc-b74d-3a9891192598.png)
 
 ### After
-
+![image](https://user-images.githubusercontent.com/33194443/195969996-be2aa669-3625-4e8f-8fa1-3beee30c4df3.png)
 
 ## 7. Reference
 1. https://github.com/onnx/onnx/blob/main/docs/Operators.md
