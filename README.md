@@ -1,2 +1,2 @@
 # sde4onnx
-Simple doc_string eraser for ONNX.
+**S**imple **D**oc_string **E**raser for **O**NNX.
