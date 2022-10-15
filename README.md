@@ -3,7 +3,7 @@
 
 https://github.com/PINTO0309/simple-onnx-processing-tools
 
-[![Downloads](https://static.pepy.tech/personalized-badge/sge4onnx?period=total&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/sge4onnx) ![GitHub](https://img.shields.io/github/license/PINTO0309/sge4onnx?color=2BAF2B) [![PyPI](https://img.shields.io/pypi/v/sge4onnx?color=2BAF2B)](https://pypi.org/project/sge4onnx/) [![CodeQL](https://github.com/PINTO0309/sge4onnx/workflows/CodeQL/badge.svg)](https://github.com/PINTO0309/sge4onnx/actions?query=workflow%3ACodeQL)
+[![Downloads](https://static.pepy.tech/personalized-badge/sde4onnx?period=total&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/sde4onnx) ![GitHub](https://img.shields.io/github/license/PINTO0309/sde4onnx?color=2BAF2B) [![PyPI](https://img.shields.io/pypi/v/sde4onnx?color=2BAF2B)](https://pypi.org/project/sde4onnx/) [![CodeQL](https://github.com/PINTO0309/sde4onnx/workflows/CodeQL/badge.svg)](https://github.com/PINTO0309/sde4onnx/actions?query=workflow%3ACodeQL)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/33194443/195971263-9caac884-676f-46e8-ae6f-6e718ccb4d31.png" />
@@ -23,17 +23,17 @@ $ echo export PATH="~/.local/bin:$PATH" >> ~/.bashrc \
 ### run
 $ pip install -U onnx \
 && python3 -m pip install -U onnx_graphsurgeon --index-url https://pypi.ngc.nvidia.com \
-&& pip install -U sge4onnx
+&& pip install -U sde4onnx
 ```
 ### 1-2. Docker
 https://github.com/PINTO0309/simple-onnx-processing-tools#docker
 
 ## 2. CLI Usage
 ```
-$ sge4onnx -h
+$ sde4onnx -h
 
 usage:
-  sge4onnx [-h]
+  sde4onnx [-h]
   -if INPUT_ONNX_FILE_PATH
   [-of OUTPUT_ONNX_FILE_PATH]
   [-n]
@@ -54,10 +54,10 @@ optional arguments:
 
 ## 3. In-script Usage
 ```python
->>> from sge4onnx import erase
+>>> from sde4onnx import erase
 >>> help(erase)
 
-Help on function erase in module sge4onnx.onnx_opname_generator:
+Help on function erase in module sde4onnx.onnx_opname_generator:
 
 erase(
     input_onnx_file_path: Union[str, NoneType] = '',
@@ -94,14 +94,14 @@ erase(
 
 ## 4. CLI Execution
 ```bash
-$ sge4onnx \
+$ sde4onnx \
 --input_onnx_file_path vae_encoder.onnx \
 --output_onnx_file_path vae_encoder_erased.onnx
 ```
 
 ## 5. In-script Execution
 ```python
-from sge4onnx import erase
+from sde4onnx import erase
 
 onnx_graph = erase(
   input_onnx_file_path="vae_encoder.onnx",
