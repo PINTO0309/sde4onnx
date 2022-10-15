@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 from os import path
 import re
 
-package_name="sge4onnx"
+package_name="sde4onnx"
 root_dir = path.abspath(path.dirname(__file__))
 
 with open("README.md") as f:
@@ -22,14 +22,14 @@ setup(
     long_description_content_type="text/markdown",
     author="Katsuya Hyodo",
     author_email="rmsdh122@yahoo.co.jp",
-    url="https://github.com/PINTO0309/sge4onnx",
+    url="https://github.com/PINTO0309/sde4onnx",
     license="MIT License",
     packages=find_packages(),
     platforms=["linux", "unix"],
     python_requires=">=3.6",
     entry_points={
         'console_scripts': [
-            "sge4onnx=sge4onnx:main"
+            "sde4onnx=sde4onnx:main"
         ]
     }
 )

@@ -2,9 +2,9 @@
 saved_model/
 build/
 dist/
-sge4onnx.egg-info/
-sge4onnx/debug/
-sge4onnx/saved_model/
+sde4onnx.egg-info/
+sde4onnx/debug/
+sde4onnx/saved_model/
 __pycache__/
 test.py
 
